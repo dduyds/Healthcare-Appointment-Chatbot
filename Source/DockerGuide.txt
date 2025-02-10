@@ -1,0 +1,16 @@
+Run with out Docker
+- Server model
+rasa run --cors "*"
+
+- Run actions server
+rasa run actions
+
+Run with docker
+- Build image
+docker build -t rasa-chatbot .
+
+- Run container
+docker run -p 5005:5005 -p 5055:5055 -p 8000:8000 rasa-chatbot
+
+- Test chatbot
+http://localhost:8000/index.html

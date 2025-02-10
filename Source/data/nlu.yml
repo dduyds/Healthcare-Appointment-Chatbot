@@ -1,0 +1,220 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - good afternoon
+    - Hello
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: intent_thank
+  examples: |
+    - thank you for your help
+    - thank you
+    - thanks
+    - I appreciate it
+    - many thanks
+- intent: book_appointment
+  examples: |
+    - I'd like to book an appointment with a doctor
+    - Can you help me schedule a doctor's appointment?
+    - I want to reserve a slot for consultation
+    - Book appointment
+    - I want to book appointment
+    - I need to arrange a visit for my health
+- intent: inform_type_of_disease
+  examples: |
+    - I need advice about my [sinus problem](type_of_disease)
+    - My child has [ear infection](type_of_disease)
+    - I have [vertigo](type_of_disease)
+    - I'm facing [nasal blockage](type_of_disease) issues
+    - My child needs [pediatric ENT care](type_of_disease)
+    - I have [allergy](type_of_disease) problems
+    - I need treatment for [sleep apnea](type_of_disease)
+    - [sinusitis](type_of_disease)
+    - [allergy](type_of_disease)
+    - [throat pain](type_of_disease)
+    - [general consultation](type_of_disease)
+    - [allergy](type_of_disease)
+- intent: inform_doctor_name
+  examples: |
+    - I want to meet [Dr. Linh Tran](doctor_name)
+    - I would like to see [Dr. Minh Vu](doctor_name)
+    - I'd like an appointment with [Dr. An Nguyen](doctor_name)
+    - [Dr. Linh Tran](doctor_name)
+    - [Dr. Minh Vu ](doctor_name)
+    - [Dr. An Nguyen](doctor_name)
+    - [Dr. Bao Le](doctor_name)
+- intent: inform_phone_number
+  examples: |
+    - My phone number is [9876543210](phone_number)
+    - You can reach me at [0911223344](phone_number)
+    - Contact me on [0708112233](phone_number)
+    - The number to call is [0800123456](phone_number)
+    - [1234567890](phone_number) is my number
+    - Please call me at [0999888777](phone_number)
+    - Here's my contact number: [0456123456](phone_number)
+    - My number is [0678901234](phone_number)
+    - Reach out at [0987654321](phone_number)
+    - Call me on [0812345678](phone_number)
+    - [0868538364][{"entity": "phone_number"}, {"entity": "phone_number"}]
+    - [0868538364][{"entity": "phone_number"}, {"entity": "phone_number"}]
+- intent: inform_schedule_time
+  examples: |
+    - Can I book an appointment at [15:30](schedule_time)?
+    - [15:33](schedule_time)
+    - [7:35](schedule_time)
+    - [10:15](schedule_time)
+    - [14:50](schedule_time)
+    - [9:20](schedule_time)
+    - [18:45](schedule_time)
+    - [12:30](schedule_time)
+    - [21:10](schedule_time)
+    - [6:05](schedule_time)
+    - [16:25](schedule_time)
+    - [23:55](schedule_time)
+- intent: inform_schedule_date
+  examples: |
+    - [25:12:2024](schedule_date)
+    - [01:01:2025](schedule_date)
+    - [15:02:2024](schedule_date)
+    - [30:03:2024](schedule_date)
+    - [14:04:2024](schedule_date)
+    - [25:05:2024](schedule_date)
+    - [10:06:2024](schedule_date)
+    - [22:07:2024](schedule_date)
+    - [18:08:2024](schedule_date)
+    - [09:09:2024](schedule_date)
+    - [31:10:2024](schedule_date)
+    - Can I book an appointment on [25:12:2024](schedule_date)?
+- intent: search_appointment
+  examples: |
+    - I want to check my appointment
+    - Can you find my booking?
+    - I need to know about my appointment
+    - Check my appointment
+    - Search for my appointment
+    - Please find my appointment details
+    - Look up my booking
+- intent: delete_appointment
+  examples: |
+    - I want to delete an appointment
+    - I want to remove my booking
+    - Cancel the booking
+    - Remove my booking
+    - Delete an appointment
+- intent: working_hour_qa_harmony_ent
+  examples: |
+    - What are the clinic's working hours on Saturdays?
+    - Are you open on Sundays?
+    - When does Harmony ENT Clinic close on weekdays?
+    - What time do you start seeing patients on Monday?
+    - Can I visit the clinic after 5 PM?
+- intent: doctor_info_qa_harmony_ent
+  examples: |
+    - Who specializes in pediatric ENT at your clinic?
+    - Can you tell me more about Dr. Minh Vu's expertise?
+    - Which doctor handles allergy-related issues?
+    - Who can I see for a hearing test?
+    - Does Dr. Linh Tran perform surgeries?
+- intent: service_info_qa_harmony_ent
+  examples: |
+    - Do you offer hearing aid fittings at Harmony ENT Clinic?
+    - What treatments do you provide for sleep apnea?
+    - Is allergy testing available at your clinic?
+    - Do you have services for children with ENT problems?
+    - Can I get a nasal polyp removed at your clinic?
+- intent: general_qa_harmony_ent
+  examples: |
+    - Where is Harmony ENT Clinic located?
+    - How can I contact your clinic for inquiries?
+    - Do you have an email address for appointments?
+    - What is Harmony ENT Clinic's mission?
+    - Can I learn more about the doctors at your clinic on the website?
+- regex: phone_number
+  examples: |
+    - 0\d{9}
+- lookup: doctor_name
+  examples: |
+    - Dr. Linh Tran
+    - Dr. Minh Vu
+    - Dr. An Nguyen
+    - Dr. Bao Le
+    - Linh Tran
+    - Minh Vu
+    - An Nguyen
+    - Bao Le

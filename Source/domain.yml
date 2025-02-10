@@ -1,0 +1,162 @@
+version: '3.1'
+intents:
+- affirm
+- book_appointment
+- bot_challenge
+- delete_appointment
+- deny
+- doctor_info_qa_harmony_ent
+- general_qa_harmony_ent
+- goodbye
+- greet
+- inform_doctor_name
+- inform_phone_number
+- inform_schedule_date
+- inform_schedule_time
+- inform_type_of_disease
+- intent_thank
+- mood_great
+- mood_unhappy
+- search_appointment
+- service_info_qa_harmony_ent
+- working_hour_qa_harmony_ent
+entities:
+- phone_number
+- type_of_disease
+- doctor_name
+- schedule_date
+- schedule_time
+forms:
+  simple_healthcare_form:
+    required_slots:
+    - type_of_disease
+    - doctor_name
+    - schedule_date
+    - schedule_time
+    - phone_number
+  search_appointment_form:
+    required_slots:
+    - search_phone_number
+  delete_appointment_form:
+    required_slots:
+    - deleted_phone_number
+    - deleted_type_of_disease
+actions:
+- action_delete_appointment
+- action_search_appointments
+- utter_greet
+- utter_thank_you
+- validate_simple_healthcare_form
+- validate_search_appointment_form
+- action_ingest_booking_data
+- action_working_hour_qa_harmony_ent
+- action_doctor_info_qa_harmony_ent
+- action_service_info_qa_harmony_ent
+- action_general_info_qa_harmony_ent
+- validate_delete_appointment_form
+slots:
+  type_of_disease:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: type_of_disease
+      conditions:
+      - active_loop: simple_healthcare_form
+  doctor_name:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: doctor_name
+      conditions:
+      - active_loop: simple_healthcare_form
+  schedule_date:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: schedule_date
+      conditions:
+      - active_loop: simple_healthcare_form
+  schedule_time:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: schedule_time
+      conditions:
+      - active_loop: simple_healthcare_form
+  phone_number:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: phone_number
+      conditions:
+      - active_loop: simple_healthcare_form
+  search_phone_number:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: phone_number
+      conditions:
+      - active_loop: search_appointment_form
+  deleted_phone_number:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: phone_number
+      conditions:
+      - active_loop: delete_appointment_form
+  deleted_type_of_disease:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: type_of_disease
+      conditions:
+      - active_loop: delete_appointment_form
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_thank_you:
+  - text: Have a good day!
+  - text: It is my pleasure to help you.
+  - text: Have a great day!
+  utter_ask_continue:
+  - text: Are you sure you want to stop the form?
+  utter_ask_type_of_disease:
+  - text: What type of disease are you seeking treatment for?
+  utter_ask_doctor_name:
+  - text: Which doctor would you like to meet?
+  utter_ask_schedule_date:
+  - text: 'What date would you like to book the appointment? (Format: dd:mm:yyyy)'
+  utter_ask_schedule_time:
+  - text: 'What time would you like to book the appointment? (Format: hh:mm)'
+  utter_ask_phone_number:
+  - text: Please provide your phone number to confirm the appointment.
+  utter_ask_search_phone_number:
+  - text: Please provide your phone number to search your appointment.
+  utter_ask_deleted_phone_number:
+  - text: Please provide the phone number associated with the appointment you want to delete.
+  utter_ask_deleted_type_of_disease:
+  - text: Please specify the type of disease for the appointment you want to delete.
+  utter_submit:
+  - text: Thank you! Your appointment has been booked successfully.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

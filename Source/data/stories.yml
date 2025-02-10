@@ -1,0 +1,116 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: search_appointment
+  - action: search_appointment_form
+  - active_loop: search_appointment_form
+  - slot_was_set:
+    - requested_slot: search_phone_number
+  - intent: inform_phone_number
+    entities:
+    - phone_number: '0868538364'
+    - phone_number: '0868538364'
+  - slot_was_set:
+    - search_phone_number: '0868538364'
+  - action: search_appointment_form
+  - slot_was_set:
+    - search_phone_number: '0868538364'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_search_appointments
+  - slot_was_set:
+    - search_phone_number: null
+  - intent: intent_thank
+  - action: utter_thank_you
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: delete_appointment
+  - action: delete_appointment_form
+  - active_loop: delete_appointment_form
+  - slot_was_set:
+    - requested_slot: deleted_phone_number
+  - intent: inform_phone_number
+    entities:
+    - phone_number: '0868538364'
+    - phone_number: '0868538364'
+  - slot_was_set:
+    - deleted_phone_number: '0868538364'
+  - action: delete_appointment_form
+  - slot_was_set:
+    - deleted_phone_number: '0868538364'
+  - slot_was_set:
+    - requested_slot: deleted_type_of_disease
+  - intent: inform_type_of_disease
+  - action: action_default_fallback
+  - intent: inform_type_of_disease
+    entities:
+    - type_of_disease: allergy
+  - slot_was_set:
+    - deleted_type_of_disease: allergy
+  - action: delete_appointment_form
+  - slot_was_set:
+    - deleted_type_of_disease: allergy
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_delete_appointment
+  - slot_was_set:
+    - deleted_phone_number: null
+  - slot_was_set:
+    - deleted_type_of_disease: null
+  - intent: search_appointment
+  - action: search_appointment_form
+  - active_loop: search_appointment_form
+  - slot_was_set:
+    - requested_slot: search_phone_number
+  - intent: inform_phone_number
+    entities:
+    - phone_number: '0868538364'
+    - phone_number: '0868538364'
+  - slot_was_set:
+    - search_phone_number: '0868538364'
+  - action: search_appointment_form
+  - slot_was_set:
+    - search_phone_number: '0868538364'
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_search_appointments
+  - slot_was_set:
+    - search_phone_number: null
+  - intent: intent_thank
+  - action: utter_thank_you

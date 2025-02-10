@@ -1,0 +1,105 @@
+Name: Harmony ENT Clinic
+Address: 123 Wellness Avenue, Ho Chi Minh City, Vietnam
+
+Contact:
+Phone: +84 28 1234 5678
+Email: contact@harmonyent.vn
+Website: www.harmonyent.vn
+
+Mission Statement:
+Delivering exceptional care for ear, nose, and throat health while ensuring our patients feel heard, valued, and comfortable.
+
+Working Hours
+Monday - Friday: 8:00 AM - 6:00 PM
+Saturday: 8:00 AM - 3:00 PM
+Sunday: Closed
+
+Services Offered
+General ENT Consultation:
+Comprehensive ear, nose, and throat examinations
+Management of common infections and conditions
+
+Audiology Services:
+Hearing tests and evaluations
+Custom hearing aid fitting and maintenance
+
+Sinus and Nasal Care:
+Chronic sinusitis treatment
+Nasal polyp management
+
+Throat Care:
+Hoarseness and vocal cord disorder treatment
+Tonsillitis and pharyngitis care
+
+Pediatric ENT Services:
+Diagnosis and treatment of childhood ENT issues
+Allergy management for kids
+
+Surgical Procedures:
+Tympanoplasty (eardrum repair)
+Functional endoscopic sinus surgery (FESS)
+Septoplasty for deviated nasal septum
+
+Allergy Testing and Treatment:
+Comprehensive allergy testing
+Immunotherapy options
+
+Sleep Apnea Management:
+Polysomnography (sleep studies)
+CPAP therapy recommendations
+
+Doctors:
+Dr. Linh Tran
+Specialty: General ENT and Sinus Surgery
+Experience: 12 years
+Bio: Dr. Linh is an experienced ENT surgeon specializing in sinus-related conditions and minimally invasive surgical procedures.
+
+Dr. An Nguyen
+Specialty: Pediatric ENT
+Experience: 8 years
+Bio: Known for her warm and child-friendly approach, Dr. An excels at treating ENT conditions in young patients, ensuring they feel at ease during consultations.
+
+Dr. Bao Le
+Specialty: Audiology and Hearing Care
+Experience: 10 years
+Bio: Dr. Bao is passionate about restoring hearing and improving communication for patients with hearing impairments.
+
+Dr. Minh Vu
+Specialty: Allergy and Sleep Apnea Management
+Experience: 15 years
+Bio: With extensive expertise in managing allergies and sleep disorders, Dr. Minh provides tailored treatment plans to improve patients’ quality of life.
+
+Service-to-Doctor Mapping:
+General ENT Consultation:
+Dr. Linh Tran: Expertise in diagnosing and managing general ENT conditions.
+Dr. An Nguyen: Focuses on child-friendly ENT consultations.
+Dr. Bao Le: Addresses hearing-related ENT issues during consultations.
+Dr. Minh Vu: Consults on ENT conditions related to allergies and sleep disorders.
+
+Audiology Services:
+Dr. Bao Le: Primary specialist for hearing tests, evaluations, and hearing aid fittings.
+Dr. Linh Tran: Supports cases where hearing issues are connected to sinus or structural ENT problems.
+
+Sinus and Nasal Care:
+Dr. Linh Tran: Expert in treating chronic sinusitis, nasal congestion, and nasal polyps.
+Dr. Minh Vu: Manages sinus conditions caused by allergies.
+
+Throat Care:
+Dr. Linh Tran: Specializes in vocal cord disorders and tonsillitis treatment.
+Dr. Minh Vu: Addresses throat conditions associated with allergies or sleep apnea.
+
+Pediatric ENT Services:
+Dr. An Nguyen: Dedicated to diagnosing and managing ENT conditions in children, including tonsils, adenoids, and allergies.
+
+Surgical Procedures:
+Dr. Linh Tran: Performs a range of ENT surgeries, including tympanoplasty, functional endoscopic sinus surgery (FESS), and septoplasty.
+Dr. Minh Vu: Assists in surgical interventions for sleep apnea or allergy-related complications.
+
+Allergy Testing and Treatment:
+Dr. Minh Vu: Leads allergy diagnostics and immunotherapy treatments.
+Dr. An Nguyen: Provides allergy care tailored for pediatric patients.
+
+Sleep Apnea Management:
+Dr. Minh Vu: Primary specialist for sleep studies and CPAP therapy recommendations.
+Dr. Linh Tran: Handles structural causes of sleep apnea requiring surgical intervention.
+

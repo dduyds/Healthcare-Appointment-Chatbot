@@ -1,0 +1,88 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say 'Thank you' when user expresses gratitude
+  steps:
+    - intent: intent_thank
+    - action: utter_thank_you
+
+- rule: Activate Healthcare Form
+  steps:
+    - intent: book_appointment
+    - action: simple_healthcare_form
+    - active_loop: simple_healthcare_form
+
+- rule: Submit Healthcare Form
+  condition:
+    - active_loop: simple_healthcare_form
+  steps:
+    - action: simple_healthcare_form
+    - active_loop: null
+    - slot_was_set:
+        - requested_slot: null
+    - action: utter_submit
+    - action: action_ingest_booking_data
+
+- rule: Activate Search Appointment Form
+  steps:
+    - intent: search_appointment
+    - action: search_appointment_form
+    - active_loop: search_appointment_form
+
+- rule: Submit Search Appointment Form
+  condition:
+    - active_loop: search_appointment_form
+  steps:
+    - action: search_appointment_form
+    - active_loop: null
+    - slot_was_set:
+        - requested_slot: null
+    - action: action_search_appointments
+
+- rule: Activate Delete Appointment Form
+  steps:
+    - intent: delete_appointment
+    - action: delete_appointment_form
+    - active_loop: delete_appointment_form
+
+- rule: Submit Delete Appointment Form
+  condition:
+    - active_loop: delete_appointment_form
+  steps:
+    - action: delete_appointment_form
+    - active_loop: null
+    - slot_was_set:
+        - requested_slot: null
+    - action: action_delete_appointment
+
+- rule: Working hour inquiry for Harmony ENT
+  steps:
+    - intent: working_hour_qa_harmony_ent
+    - action: action_working_hour_qa_harmony_ent
+
+- rule: Doctor information inquiry for Harmony ENT
+  steps:
+    - intent: doctor_info_qa_harmony_ent
+    - action: action_doctor_info_qa_harmony_ent
+
+- rule: Service information inquiry for Harmony ENT
+  steps:
+    - intent: service_info_qa_harmony_ent
+    - action: action_service_info_qa_harmony_ent
+
+- rule: General information inquiry for Harmony ENT
+  steps:
+    - intent: general_qa_harmony_ent
+    - action: action_general_info_qa_harmony_ent
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony ENT Clinic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Body Styles */
+    body {
+      margin: 0;
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: #d1e7ff; /* Light blue background */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #ffffff; /* Bright white text */
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Glow effect */
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #e0e8ff; /* Light pastel color for subtler contrast */
+      margin-top: 10px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #58a6ff, #1b4d91); /* Gradient background */
+      height: 250px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Overlay to Darken Background */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+      z-index: 1;
+    }
+
+    .hero-text {
+      text-align: center;
+      font-size: 1.8rem;
+      line-height: 1.6;
+      max-width: 80%;
+      position: relative;
+      z-index: 2; /* Bring text above overlay */
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .hero-text {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Harmony ENT Clinic</h1>
+      <h2>Your health is our priority. Book your appointment today!</h2>
+    </div>
+  </div>
+
+  <!-- Chat Widget -->
+  <div id="rasa-chat-widget" data-websocket-url="http://localhost:5005/"></div>
+  <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
+
+</body>
+</html>
