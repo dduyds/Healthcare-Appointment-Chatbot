@@ -1,6 +1,7 @@
 # Healthcare Chatbot
 ---
 **Project Description:**
+
 Develop a healthcare chatbot to automate customer service at clinics, enhance user experience, and optimize operational efficiency. The chatbot provides quick access to appointment schedules, clinic services, and doctor details while reducing the workload for customer support staff. Additionally, it supports data management and sends automated reminders to patients.
 
 **Key features:**
