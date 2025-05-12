@@ -23,7 +23,7 @@ This project introduces an intelligent **Healthcare Chatbot** designed to **auto
 | Deployment           | Dockerized (Localhost) |
 
 ## 🛠 System Architecture
-![System Architecture](assets/architecture.png)
+![System Architecture](Architecture.jpg)
 - **Rasa Agent**: Handles intent recognition, dialogue management, and entity extraction.  
 - **RAG Module**: Retrieves answers from clinic documents for better contextual responses.  
 - **Database**: Stores appointment info and conversation history.  
