@@ -1,4 +1,4 @@
-# Healthcare Chatbot
+# Healthcare Appointment Chatbot
 ---
 **Project Description:**
 
