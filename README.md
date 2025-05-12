@@ -29,6 +29,7 @@ management.
    ```bash
    rasa run actions
 4. **Test Chatbot**
+
 Open your browser and go to:
    ```bash
    http://localhost:8000/index.html
@@ -40,6 +41,7 @@ Open your browser and go to:
    ```bash
    docker run -p 5005:5005 -p 5055:5055 -p 8000:8000 rasa-chatbot
 3. **Test Chatbot**
+
 Open your browser and go to:
    ```bash
    http://localhost:8000/index.html
