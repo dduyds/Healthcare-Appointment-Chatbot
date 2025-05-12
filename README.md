@@ -30,8 +30,7 @@ This project introduces an intelligent **Healthcare Chatbot** designed to **auto
 - **SMS Module**: Sends reminders and booking confirmations to patients.
 
 ## 📽️ Demo
-
-[![Watch the demo](https://img.youtube.com/vi/<VIDEO_ID>/0.jpg)](https://youtu.be/7Wv-AgU5ET8)
+[![Watch the video](https://img.youtube.com/vi/7Wv-AgU5ET8/hqdefault.jpg)](https://youtu.be/7Wv-AgU5ET8)
 
 ## 🚀 Future Development
 
@@ -52,7 +51,7 @@ For more detailed information about system design, technology selection, and imp
 ## 🚀 How to Run the Project
 ### 📥 Clone the Repository
     git clone https://github.com/dduyds/Healthcare-Appointment-Chatbot.git
-    cd Healthcare-Appointment-Chatbot
+    cd cd Healthcare-Appointment-Chatbot/Source
 
 ### 🔧 Run Without Docker
 1. **Install Python dependencies**
