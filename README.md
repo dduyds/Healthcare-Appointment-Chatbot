@@ -49,7 +49,6 @@ For more detailed information about system design, technology selection, and imp
 👉 [📘 Final Project Report (PDF)](Final_project_report.pdf)
 
 
-
 ## 🚀 How to Run the Project
 ### 📥 Clone the Repository
     git clone https://github.com/dduyds/Healthcare-Appointment-Chatbot.git
