@@ -1,19 +1,53 @@
-# Healthcare Appointment Chatbot
----
-**Project Description:**
+# 🏥 Healthcare Appointment Chatbot
 
-Develop a healthcare chatbot to automate customer service at clinics, enhance user experience, and optimize operational efficiency. The chatbot provides quick access to appointment schedules, clinic services, and doctor details while reducing the workload for customer support staff. Additionally, it supports data management and sends automated reminders to patients.
+## 📌 Project Overview
 
-**Key features:**
-- Interface: A simple, user-friendly website that displays clinic 
-information and supports appointment scheduling.
-- Answer customer questions about clinic services, working hours, and 
-doctors. 
-- Schedule/ Search/ Cancel appointments and send SMS notifications. 
-- Store appointment information in the database for easy 
-management.
+This project introduces an intelligent **Healthcare Chatbot** designed to **automate customer service for clinics**, enabling 24/7 support, reducing staff workload, and enhancing user experience. The chatbot provides **fast, accurate, and context-aware responses** to patients, streamlines **appointment management**, and delivers **automated SMS notifications**.
 
-[📄 Xem tài liệu PDF](Final_project_report.pdf)
+## 🎯 Key Features
+
+- 🔹 **Book/Search/Cancel Appointments** via chatbot interface  
+- 🔹 **Answer Questions** about clinic services, working hours, and doctors  
+- 🔹 **Send SMS Notifications** for appointment confirmations and updates  
+- 🔹 **Store and manage data** in a backend database  
+- 🔹 **Simple web interface** for interaction  
+
+## 🧠 Technologies Used
+
+| Component            | Technology                           |
+|----------------------|---------------------------------------|
+| Core Chatbot Engine  | Rasa Open Source, Langflow |
+| Interface            | HTML (web UI)                    |
+| Notifications        | SMS API Integration                  |
+| Backend              | SQLite (data storage)   |
+| Deployment           | Dockerized (Localhost) |
+
+## 🛠 System Architecture
+![System Architecture](assets/architecture.png)
+- **Rasa Agent**: Handles intent recognition, dialogue management, and entity extraction.  
+- **RAG Module**: Retrieves answers from clinic documents for better contextual responses.  
+- **Database**: Stores appointment info and conversation history.  
+- **SMS Module**: Sends reminders and booking confirmations to patients.
+
+## 📽️ Demo
+
+[![Watch the demo](https://img.youtube.com/vi/<VIDEO_ID>/0.jpg)](https://youtu.be/7Wv-AgU5ET8)
+
+## 🚀 Future Development
+
+- 🔍 Detect and handle **overlapping appointments** or out-of-hours bookings  
+- 🧑‍⚕️ Suggest **specialists** based on symptoms or conditions  
+- 🧩 Integrate with **Electronic Health Records (EHR)** and medical recommendation systems
+
+## 💡 Motivation
+
+Healthcare providers often face overwhelming workloads and limited human resources. By leveraging **AI-powered conversational agents**, this project contributes to smarter, faster, and more accessible healthcare services.
+
+### 📄 View Full Report
+
+For more detailed information about system design, technology selection, and implementation, please refer to the full project report:
+👉 [📘 Final Project Report (PDF)](Final_project_report.pdf)
+
 
 ## 🚀 How to Run the Project
 ### 📥 Clone the Repository
