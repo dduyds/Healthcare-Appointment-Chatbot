@@ -12,3 +12,34 @@ doctors.
 - Schedule/ Search/ Cancel appointments and send SMS notifications. 
 - Store appointment information in the database for easy 
 management.
+
+## 🚀 How to Run the Project
+### 📥 Clone the Repository
+    git clone https://github.com/dduyds/Healthcare-Appointment-Chatbot.git
+    cd Healthcare-Appointment-Chatbot
+
+### 🔧 Run Without Docker
+1. **Install Python dependencies**
+   ```bash
+   pip install -r requirements.txt
+2. **Start Rasa Server**
+   ```bash
+   rasa run --cors "*"
+3. **Start Action Server**
+   ```bash
+   rasa run actions
+4. **Test Chatbot**
+Open your browser and go to:
+   ```bash
+   http://localhost:8000/index.html
+###  🐳 Run With Docker
+1. **Build Docker image**
+   ```bash
+   docker build -t rasa-chatbot .
+2. **Run Docker container**
+   ```bash
+   docker run -p 5005:5005 -p 5055:5055 -p 8000:8000 rasa-chatbot
+3. **Test Chatbot**
+Open your browser and go to:
+   ```bash
+   http://localhost:8000/index.html
