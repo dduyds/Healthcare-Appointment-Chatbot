@@ -30,7 +30,8 @@ This project introduces an intelligent **Healthcare Chatbot** designed to **auto
 - **SMS Module**: Sends reminders and booking confirmations to patients.
 
 ## 📽️ Demo
-Click to watch the video.
+🎬 Click the image below to watch the demo video on YouTube:
+
 [![Watch the video](https://img.youtube.com/vi/7Wv-AgU5ET8/hqdefault.jpg)](https://youtu.be/7Wv-AgU5ET8)
 
 ## 🚀 Future Development
