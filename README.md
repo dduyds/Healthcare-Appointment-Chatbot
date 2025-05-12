@@ -13,6 +13,8 @@ doctors.
 - Store appointment information in the database for easy 
 management.
 
+[📄 Xem tài liệu PDF](Final_project_report.pdf)
+
 ## 🚀 How to Run the Project
 ### 📥 Clone the Repository
     git clone https://github.com/dduyds/Healthcare-Appointment-Chatbot.git
