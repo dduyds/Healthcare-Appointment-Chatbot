@@ -53,7 +53,7 @@ For more detailed information about system design, technology selection, and imp
 ## 🚀 How to Run the Project
 ### 📥 Clone the Repository
     git clone https://github.com/dduyds/Healthcare-Appointment-Chatbot.git
-    cd cd Healthcare-Appointment-Chatbot/Source
+    cd Healthcare-Appointment-Chatbot/Source
 
 ### 🔧 Run Without Docker
 1. **Install Python dependencies**
