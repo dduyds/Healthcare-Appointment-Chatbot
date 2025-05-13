@@ -17,7 +17,7 @@ This project introduces an intelligent **Healthcare Chatbot** designed to **auto
 | Component            | Technology                           |
 |----------------------|---------------------------------------|
 | Core Chatbot Engine  | Rasa Open Source, Langflow |
-| Interface            | HTML (web UI)                    |
+| Interface            | HTML/CSS (web UI)                    |
 | Notifications        | SMS API Integration                  |
 | Backend              | SQLite (data storage)   |
 | Deployment           | Dockerized (Localhost) |
