@@ -6,11 +6,11 @@ This project introduces an intelligent **Healthcare Chatbot** designed to **auto
 
 ## 🎯 Key Features
 
-- 🔹 **Book/Search/Cancel Appointments** via chatbot interface  
-- 🔹 **Answer Questions** about clinic services, working hours, and doctors  
-- 🔹 **Send SMS Notifications** for appointment confirmations and updates  
-- 🔹 **Store and manage data** in a backend database  
-- 🔹 **Simple web interface** for interaction  
+- **Book/Search/Cancel Appointments** via chatbot interface  
+- **Answer Questions** about clinic services, working hours, and doctors  
+- **Send SMS Notifications** for appointment confirmations and updates  
+- **Store and manage data** in a backend database  
+- **Simple web interface** for interaction  
 
 ## 🧠 Technologies Used
 
